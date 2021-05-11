@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Angelk90.github.io/Storybook-Dash/",
   "name": "RNStorybook",
   "version": "0.0.1",
   "private": true,
@@ -13,7 +14,7 @@
     "build-react": "webpack --mode production",
     "start-react": "webpack-dev-server --config ./webpack.config.js --mode development",
     "start-storybook-web": "./node_modules/@storybook/react/bin/index.js",
-    "build-storybook-web": "./node_modules/@storybook/react/bin/build.js",
+    "build-storybook-web": "./node_modules/@storybook/react/bin/build.js && rm -rf docs && mv storybook-static docs",
     "storybook-web": "yarn run start-storybook-web",
     "build:storybook-web": "yarn run build-storybook-web"
   },
